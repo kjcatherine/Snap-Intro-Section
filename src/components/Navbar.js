@@ -6,13 +6,13 @@ export default function Navbar() {
     navLinks.style.right = "0";
   }
   function hideMenu() {
-    navLinks.style.right = "-250px";
+    navLinks.style.right = "-260px";
   }
   return (
     <header className="header container">
       <img src="/images/logo.svg" alt="logo" />
       <nav className="navbar">
-        <button class="close" onClick={hideMenu}>
+        <button class="close button" onClick={hideMenu}>
           <img
             onClick={hideMenu}
             src="./images/icon-close-menu.svg"
@@ -81,8 +81,13 @@ export default function Navbar() {
           <button class="register">Register</button>
         </div>
       </nav>
-      <button class="hamburger" onClick={showMenu}>
-        <img src="./images/icon-menu.svg" alt="menu" class="menu" />
+      <button class="hamburger button" onClick={showMenu}>
+        <img
+          onClick={showMenu}
+          src="./images/icon-menu.svg"
+          alt="menu"
+          class="menu"
+        />
       </button>
     </header>
 
