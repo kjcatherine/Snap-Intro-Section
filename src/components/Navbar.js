@@ -1,113 +1,106 @@
 import "../App.css";
 
 export default function Navbar() {
-  let navLinks = document.querySelector(".navbar");
+  // const mainNav = document.querySelector(".main.nav");
+  // const submenu = document.querySelectorAll(".submenu");
+  // const hasSubmenu = document.querySelectorAll(".has-submenu");
+  // const menuIcon = document.querySelector(".menu-icon");
+  let navLinks = document.querySelector(".main-nav");
   function showMenu() {
     navLinks.style.right = "0";
   }
   function hideMenu() {
-    navLinks.style.right = "-260px";
+    navLinks.style.right = "-300px";
   }
   return (
     <header className="header container">
       <img src="/images/logo.svg" alt="logo" />
-      <nav className="navbar">
-        <button class="close button" onClick={hideMenu}>
-          <img
-            onClick={hideMenu}
-            src="./images/icon-close-menu.svg"
-            alt="close menu"
-          />
+
+      <nav className="main-nav">
+        <button onClick={hideMenu} class="close button">
+          <img src="./images/icon-close-menu.svg" alt="close menu" />
         </button>
-
-        <ul className="navlinks">
+        <ul>
           <li>
-            <a className="arrow" href="#features">
+            <a className="has-submenu" href="#">
               Features
-              <span>
+              <span className="arrow">
                 <img src="./images/icon-arrow-down.svg" alt="expand menu" />
               </span>
             </a>
 
-            <div className="dropdown dropdown--features">
-              <a href="#todo">
-                <img src="/images/icon-todo.svg" alt="todo icon" />
-                Todo List
-              </a>
-
-              <a href="#">
-                <img src="/images/icon-calendar.svg" alt="calender icon" />
-                Calenders
-              </a>
-
-              <a href="#">
-                <img src="/images/icon-reminders.svg" alt="reminder icon" />
-                Reminders
-              </a>
-
-              <a href="#">
-                <img src="/images/icon-planning.svg" alt="planning icon" />
-                Planning
-              </a>
-            </div>
+            <ul className="submenu features">
+              <li>
+                <a href="#todo">
+                  <span className="icon">
+                    <img src="/images/icon-todo.svg" alt="todo icon" />
+                  </span>
+                  Todo List
+                </a>
+              </li>
+              <li>
+                <a href="#calendar">
+                  <span className="icon">
+                    <img src="/images/icon-calendar.svg" alt="calender icon" />
+                  </span>
+                  Calenders
+                </a>
+              </li>
+              <li>
+                <a href="#reminder">
+                  <span className="icon">
+                    <img src="/images/icon-reminders.svg" alt="reminder icon" />
+                  </span>
+                  Reminders
+                </a>
+              </li>
+              <li>
+                <a href="#planning">
+                  <span className="icon">
+                    <img src="/images/icon-planning.svg" alt="planning icon" />
+                  </span>
+                  Planning
+                </a>
+              </li>
+            </ul>
           </li>
 
           <li>
-            <a className="arrow" href="#company">
+            <a className="has-submenu" href="#">
               Company
-              <span>
+              <span className="arrow">
                 <img src="./images/icon-arrow-down.svg" alt="expand menu" />
               </span>
             </a>
-            <div className="dropdown company--dropdown">
-              <a href="#">History</a>
-              <a href="#">Our Team</a>
-              <a href="#">Blog</a>
-            </div>
+            <ul className="submenu company">
+              <li>
+                <a href="#">History</a>
+              </li>
+              <li>
+                <a href="#">Our Team</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#">Blog</a>
+              </li>
+            </ul>
           </li>
 
           <li>
-            <a className="careers" href="#careers">
-              Careers
-            </a>
+            <a href="#">Career</a>
           </li>
-          <li className="about">
-            <a href="#about">About</a>
+          <li>
+            <a href="#">About</a>
           </li>
         </ul>
-
         <div className="login--register">
           <button class="login">Login</button>
           <button class="register">Register</button>
         </div>
       </nav>
-      <button class="hamburger button" onClick={showMenu}>
-        <img
-          onClick={showMenu}
-          src="./images/icon-menu.svg"
-          alt="menu"
-          class="menu"
-        />
+      <button onClick={showMenu} class="hamburger button">
+        <img src="./images/icon-menu.svg" alt="menu" class="menu" />
       </button>
     </header>
-
-    // <nav className="navbar">
-    //   <a href="#home">Home</a>
-    //   <a href="#home">Home</a>
-
-    //   <div className="dropdown">
-    //     <button className="dropbtn">
-    //       Dropdown
-    //       <span>
-    //         <img src="./images/icon-arrow-down.svg" alt="expand menu" />
-    //       </span>
-    //     </button>
-    //     <div className="dropdown--content">
-    //       <a href="#">Link 1</a>
-    //       <a href="#">Link 2</a>
-    //       <a href="#">Link 3</a>
-    //     </div>
-    //   </div>
-    // </nav>
   );
 }
