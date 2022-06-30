@@ -1,10 +1,6 @@
 import "../App.css";
 
 export default function Navbar() {
-  // const mainNav = document.querySelector(".main.nav");
-  // const submenu = document.querySelectorAll(".submenu");
-  // const hasSubmenu = document.querySelectorAll(".has-submenu");
-  // const menuIcon = document.querySelector(".menu-icon");
   let navLinks = document.querySelector(".main-nav");
   function showMenu() {
     navLinks.style.right = "0";
