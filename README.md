@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Github](https://github.com/adram3l3ch/snap-intro-section.git)
+-   Solution URL: [Github](https://github.com/kjcatherine/Snap-Intro-Section)
 
 ## My process
 
