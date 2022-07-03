@@ -8,22 +8,22 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 
 Users should be able to:
 
--   View the relevant dropdown menus on desktop and mobile when interacting with the navigation links
--   View the optimal layout for the content depending on their device's screen size
--   See hover states for all interactive elements on the page
+- View the relevant dropdown menus on desktop and mobile when interacting with the navigation links
+- View the optimal layout for the content depending on their device's screen size
+- See hover states for all interactive elements on the page
 
 ### Screenshot
 
-<img src='/public/gif/giff.gif'>
+<img src='/public/images/snap.png'>
 
 ### Links
 
--   Solution URL: [Github](https://github.com/kjcatherine/Snap-Intro-Section)
+- Solution URL: [Github](https://github.com/kjcatherine/Snap-Intro-Section)
 
 ## My process
 
 ### Built with
 
--   React
--   CSS custom properties
--   Flexbox
+- React
+- CSS custom properties
+- Flexbox
